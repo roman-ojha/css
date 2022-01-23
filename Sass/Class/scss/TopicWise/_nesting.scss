@@ -5,16 +5,16 @@
     //   here we are styling the clild element of inside the parent element
     font-weight: map-get($font-weights, $key: bold);
   }
-  .main__paragraph {
+  .main__paragraph1 {
     //   we can use other selector as well
     font-weight: map-get($font-weights, $key: bold);
   }
-  &__paragraph {
+  &__paragraph1 {
     //   but we can use this as well to select the element
     // & = parent
     font-weight: map-get($font-weights, $key: bold);
   }
-  #{&}__paragraph {
+  #{&}__paragraph1 {
     // if we want to select like: .main .main__paragraph {}
     font-weight: map-get($font-weights, $key: bold);
     &:hover {

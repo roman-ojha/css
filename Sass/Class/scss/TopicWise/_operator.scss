@@ -1,0 +1,43 @@
+/*
+  *) Type of Operator in Sass:
+    1) Equality Operators (use for if() function)
+        a) == (equal to) (return true/false)
+        b) != (Not Equal to) (return true/false)
+    2) Relational Operators (use for if() function)
+        a) < (Less then) (return true/false)
+        b) > (Greater than) (return true/false)
+        c) <= (Lessa than Equal to) (return true/false)
+        d) >= (Greater than Equal to) (return true/false)
+    3) Numeric
+        a) + (addition)
+        b) - (Subtraction)
+        c) * (Multiplication)
+        d) / (Division)
+        e) % (Modulas or Remainder)
+    4) String
+        a) + (Concatenation) (10 + px -> 10px)
+    5) Boolean (return true/false)
+        a) and
+        b) or
+        c) not (not 10 == 10px; <will return false>)
+*/
+
+.main {
+  // in normal css
+  //   width: calc(80% - 40%);
+
+  // in Scss
+  width: 80% - 40%;
+
+  //   but in Scss we can't mix types:
+
+  //   in normal css
+  // width: calc(80% -400px); (would work fine)
+
+  //   in Scss
+  //   width: 80% - 400px;
+  //   (would throw error)
+
+  // padding: 10 + 2 + px;
+  //  12px
+}

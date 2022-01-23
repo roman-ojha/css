@@ -1,0 +1,18 @@
+/*
+    -> we can extend an element 
+    -> so the element that we extended to will then inherit all the styles from the selected element
+*/
+
+// let's say that we want to extend the style that is in '.main__paragraph1' to '.main__paragraph2'
+
+.main {
+  #{&}__paragraph2 {
+    @extend .main__paragraph1;
+    // so here we are setting all the style that paragraph1 have into this element
+
+    // some change
+    &:hover {
+      color: $acent-color;
+    }
+  }
+}
