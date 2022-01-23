@@ -1,0 +1,37 @@
+/*
+    *) String Function:
+        a) quote()
+        b) str-index()
+        c) str-insert()
+        d) str-length()
+        e) str-slice()
+        f) to-upper-case()
+        g) to-lower-case()
+        h) unique-id()
+        i) unquote()
+*/
+
+.test {
+  font-family: quote(Arial);
+  // return "Arial"
+  font-family: unquote("Arial");
+  //   return Arial
+  font-family: to-upper-case("Arial");
+  //   return "ARIAL"
+  font-family: to-lower-case(ARIAL);
+  //   return arial
+  font-family: str-length(Arial);
+  //   return 5 (lenght of string)
+  font-family: str-index($string: "Helvetica Neue", $substring: "lve");
+  //   return 3;
+  font-family: str-insert(
+    $string: "Helvatica Neue",
+    $insert: " Mono",
+    $index: 10
+  );
+  //   return "Helvetica Mono Neue"
+  font-family: str-slice($string: "Helvetica Neue", $start: 3, $end: 5);
+  //   return "lve";
+  //   font-family: unique-id();
+  //   return <unique id upto 9 char>
+}
