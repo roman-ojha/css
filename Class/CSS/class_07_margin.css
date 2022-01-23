@@ -1,0 +1,54 @@
+/* the gap between outside border and outer content is called margin */
+
+.div1 {
+  border: 1px solid darkgreen;
+}
+
+body {
+  border: 5px dotted black;
+}
+
+/* #margin {
+  margin-top: 50px;
+  margin-right: 10px;
+  margin-bottom: 50px;
+  margin-left: ;
+} */
+
+/* #margin {
+  margin: 50px 10px;
+} */
+
+/* #margin {
+  margin: 50px 10px 50px 10px;
+} */
+
+/* margin minus */
+/* #margin {
+  margin-top: -10px;
+  margin-bottom: -10px;
+} */
+/* minus will mearg between two or more contain */
+/* minus will not work for padding */
+
+/* #margin {
+  width: 200px;
+} */
+
+/* #margin {
+  width: 200px;
+  margin: 40px auto;
+} */
+/* margin: 40px=(for top and bottom) auto=(auto means center and it is apply in right and left) */
+
+/* margin collaps */
+#margin {
+  margin-top: 50px;
+}
+
+#colsp {
+  margin-bottom: 30px;
+}
+/* if first content have margin bottom and second content have top margin then which content have more px that content have more praority so only more px content will apply margin */
+/* here margin-top have 50px so that is greater then margin-bottom so margin top will apply */
+/* this is only apply for top and bottom but it is not apply fot right and left for left and right it will 50px+30px */

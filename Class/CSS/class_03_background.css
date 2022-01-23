@@ -1,0 +1,140 @@
+/* #bg {
+  background-image: url("Pictures/Background\ 05.jpg");
+  background-repeat: no-repeat;
+  
+}  */
+/*will not going to repeat the image*/
+
+/* #bg {
+  background-image: url("Pictures/Background\ 05.jpg");
+  background-repeat: repeat-x: ;
+  
+}  */
+/*will going to repeat the image in x-axis*/
+
+/* #bg {
+  background-image: url("Pictures/Background\ 05.jpg");
+  background-repeat: repeat-y: ;
+  
+}  */
+/*will going to repeat the image in y-axis*/
+
+/* #bg {
+  background-image: url("Pictures/Background\ 05.jpg");
+  background-repeat: repeat: ;
+  
+} */
+/*will going to repeat the image in x-axis and y-axis*/
+
+/* #bg {
+  background-image: url("Pictures/Background\ 05.jpg");
+  background-repeat: no-repeat; /*will not going to repeat the image *
+  background-position: right top;
+} */
+
+/* #bg {
+  background-image: url("Pictures/Background\ 05.jpg");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+} */
+
+/* #bg {
+  background-image: url("Pictures/Background\ 05.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+} */
+
+/* #bg {
+  background-image: url("Pictures/Background\ 05.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+} */
+
+/* #bg {
+  background-image: url("Pictures/Background\ 05.jpg");
+  background-repeat: no-repeat;
+  background-position: 50px 100px; 
+} */
+/*50px=x-axis 100px=y-axis */
+
+/* #bg {
+  background-image: url("Pictures/Background\ 05.jpg");
+  background-repeat: no-repeat;
+  background-position: 5% 10%;
+} */
+/* in percent */
+
+/* #bg {
+  background-image: url("Pictures/Background\ 05.jpg");
+  background-repeat: no-repeat;
+  background-position: 5% 10%;
+  background-size: 600px 500px;
+} */
+
+/* #bg {
+  background-image: url("Pictures/Background\ 05.jpg");
+  background-repeat: no-repeat;
+  background-position: 5% 10%;
+  background-size: 50% 50%;
+} */
+
+/* #bg {
+  background-image: url("Pictures/Background\ 05.jpg");
+  background-repeat: no-repeat;
+  background-position: 5% 10%;
+  background-size: 100% 100%;
+} */
+
+/* #bg {
+  background-image: url("Pictures/Background\ 05.jpg");
+  background-repeat: no-repeat;
+  background-position: 5% 10%;
+  background-size: 100% 100%;
+  background-attachment: scroll;
+} */
+
+/* #bg {
+  background-image: url("Pictures/Background\ 05.jpg");
+  background-repeat: no-repeat;
+  background-position: 5% 10%;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+} */
+/* the bakhground image will attached to the site */
+
+/* #bg {
+  background-image: url("Pictures/Background\ 05.jpg");
+  background-repeat: no-repeat;
+  background-position: 5% 10%;
+  background-size: cover;
+} */
+/* cover will cover all the body but might will choped somewhere to fit in body and image could distorted */
+
+/* #bg {
+  background-image: url("Pictures/Background\ 05.jpg");
+  background-repeat: no-repeat;
+  background-position: 5% 10%;
+  background-size: contain;
+} */
+/* contain dows not want to distort the image so it automaticalty fill the site without ditorting */
+/* to use contain image ratio is important */
+
+/* for a shortcut to use background */
+/* #bg {
+  background: #ffffff url("Pictures/Background\ 05.jpg") no-repeat fixed 5% 10%;
+} */
+/* background: color image repeat attachment position */
+
+/* for multiplebackground */
+#bg {
+  background-color: lightskyblue;
+  background-image: url("Pictures/Tranparent\ 04.png"),
+    url("Pictures/Tranparent\ 02.png");
+  background-repeat: no-repeat;
+  background-position: top left, bottom right;
+  background-size: 50% 50%, 50% 50%;
+}
+
+/* body {
+  background-color: lightsalmon;
+} */

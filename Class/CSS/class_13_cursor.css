@@ -1,0 +1,70 @@
+/* #div1 {
+  border: 1px solid red;
+  cursor: auto;
+} */
+/* by default is auto */
+
+/* #div1 {
+  border: 1px solid red;
+  cursor: all-scroll;
+} */
+
+/* #div1 {
+  border: 1px solid red;
+  cursor: cell;
+} */
+
+/* #div1 {
+  border: 1px solid red;
+  cursor: col-resize;
+} */
+
+/* #div1 {
+  border: 1px solid red;
+  cursor: crosshair;
+} */
+
+/* #div1 {
+  border: 1px solid red;
+  cursor: e-resize;
+} */
+
+/* #div1 {
+  border: 1px solid red;
+  cursor: grab;
+} */
+
+/* #div1 {
+  border: 1px solid red;
+  cursor: help;
+} */
+
+/* #div1 {
+  border: 1px solid red;
+  cursor: not-allowed;
+} */
+
+/* #div1 {
+  border: 1px solid red;
+  cursor: pointer;
+} */
+
+/* #div1 {
+  border: 1px solid red;
+  cursor: progress;
+} */
+
+/* #div1 {
+  border: 1px solid red;
+  cursor: wait;
+} */
+
+/* #div1 {
+  border: 1px solid red;
+  cursor: zoom-in;
+} */
+
+#div1 {
+  border: 1px solid red;
+  cursor: zoom-out;
+}

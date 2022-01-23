@@ -1,0 +1,233 @@
+/* this property define the position of element that where to put or how to put */
+
+/* 
+
+there are mainly 4 type of porperty :
+1) static ~ normal flow
+    this is default , every element comes with satatic property
+2) reative
+
+3) fixed
+4) absolute
+
+there are 4 other property as well which will work with that main property:
+1) top
+2) bottom
+3) left
+4) right 
+
+*/
+
+/* ---------------------------------------------------------------------------- */
+
+#parent {
+  border: 1px solid red;
+  padding: 20px;
+  width: 50%;
+}
+
+#one {
+  width: 100px;
+  height: 100px;
+  background-color: green;
+}
+#two {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+}
+
+#three {
+  width: 100px;
+  height: 100px;
+  background-color: black;
+}
+
+/* ------------------------------------------------------------------------- */
+
+#parent2 {
+  border: 1px solid red;
+  padding: 20px;
+  width: 50%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#one2 {
+  width: 100px;
+  height: 100px;
+  background-color: green;
+  display: inline-block;
+}
+#two2 {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  display: inline-block;
+}
+
+#three2 {
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  display: inline-block;
+}
+
+/* ---------------------------------------------------------------------------- */
+
+/* in relative */
+/* in relative the element  can move any where the that element 
+will not allow any other element to take original position of that element  */
+#parent3 {
+  border: 1px solid red;
+  padding: 20px;
+  width: 50%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#one3 {
+  width: 100px;
+  height: 100px;
+  background-color: green;
+  display: inline-block;
+}
+#two3 {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  display: inline-block;
+  position: relative;
+  top: 50px;
+  left: 50px;
+}
+
+#three3 {
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  display: inline-block;
+}
+
+/* --------------------------------------------------------------------------- */
+
+/* in absolute */
+/* 
+
+absoulte take a calculation according to their positioned parent element
+positioned parent element means when it had apply position: properties
+and position value has to be other then static value, if element have 
+static value then we can't say that element as a positioned element  
+but if the element have reative,fixed and absolute then we can say that 
+this element is positioed element
+so, absoulte take a calculation according to the nearest positioned element
+and if it will not find any positioned element then it will take calulation 
+from  body tag
+and absolute will allow any other element to take original position of that 
+element
+*/
+#parent4 {
+  border: 1px solid red;
+  padding: 20px;
+  width: 50%;
+  margin: 100px;
+}
+
+#one4 {
+  width: 100px;
+  height: 100px;
+  background-color: green;
+  display: inline-block;
+}
+#two4 {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  display: inline-block;
+  position: absolute;
+  top: 0px;
+  right: 100px;
+}
+/* position: absolute; ->this take the calculation from the body 
+because there no positioned parent element
+*/
+
+#three4 {
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  display: inline-block;
+}
+
+/* ------------------------------------------------------------------------ */
+
+#parent5 {
+  border: 1px solid red;
+  padding: 20px;
+  width: 50%;
+  margin: 100px;
+  position: relative;
+}
+
+#one5 {
+  width: 100px;
+  height: 100px;
+  background-color: green;
+  display: inline-block;
+}
+#two5 {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  display: inline-block;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+/* position: absolute; -> now it is taking calculation from parent element 
+because parent element become positioned */
+
+#three5 {
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  display: inline-block;
+}
+
+/* ------------------------------------------------------------------------ */
+
+/* in fixed */
+#parent6 {
+  border: 1px solid red;
+  padding: 20px;
+  width: 50%;
+  margin: 100px;
+  position: relative;
+}
+
+#one6 {
+  width: 100px;
+  height: 100px;
+  background-color: green;
+  display: inline-block;
+}
+#two6 {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  display: inline-block;
+  position: fixed;
+  bottom: 0px;
+  right: 100px;
+}
+/* it also take a clculation according to the positioned parent element */
+/* position: fixed;-> by using this property element will be fixed at the same 
+position in the browser after scrolling browser as well it will allow 
+other element to come in his original place*/
+
+#three6 {
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  display: inline-block;
+}

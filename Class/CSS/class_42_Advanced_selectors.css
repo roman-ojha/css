@@ -1,0 +1,147 @@
+/* 
+
+
+Type of Selector are:
+1) type selector
+-> example:
+
+        h1{
+            color:red;
+        }
+2) ID selector
+-> example:
+        #red-p{
+            color:red;
+        }
+3) Class selector
+-> example:
+        .red-p{
+            color:red;
+        }
+
+4) pseudo class and element
+-> example:
+        a:hover{
+            color:red;
+        }
+        p::firstline{
+            color:red;
+        }
+5) Attribute selector
+-> example
+        a[href="https://example.com"]{
+            color:red;
+        }
+6) universal selector
+-> example
+        *{
+            color:red;
+        }
+7) Combinator salector
+-> a) Descendant combinatory(child at any stage)
+    -> example:
+        .red-p span{
+            color:green;
+        }
+    b) child combinatory (direct child)
+    -> example:
+        .red-p >span{
+            color:green;
+        }
+    c) Adjacent combinatory(right after sibling) // sibling = on same level
+    // on here you can change the property of next sebling by using previous sibiling like .red-p can change the 'h1'
+    -> example:
+        .red-p+h1{
+            color:green;
+        }
+    d) General sibling combinatory (all sibling) // sibling = on same level
+    // here it work of all sibling
+    -> example:
+        .red-p ~h1{
+            color:green;
+        }
+8) Add selector
+-> a) general sibling combinatory
+    -> example:
+        .red-p, h1{
+            color:green;
+        } 
+        
+        
+        
+*/
+
+/* 1) type selector */
+li {
+  color: red;
+}
+
+/* 2) ID selector */
+
+#list2 {
+  color: royalblue;
+}
+
+/* 3) Class selector */
+
+.list5 {
+  color: rebeccapurple;
+}
+
+/* 4) pseudo class and element */
+
+a:hover {
+  color: green;
+}
+
+p::first-line {
+  color: darkgoldenrod;
+}
+
+/* 5) Attribute selector */
+
+a[href="https://www.google.com"]
+{
+  color: yellow;
+}
+
+/* 6) universal selector */
+
+/* * {
+  border: 1px solid red;
+} */
+
+/* 7) Combinator salector */
+
+/* a) Descendant combinatory(child at any stage) */
+
+div a {
+  color: tomato;
+}
+
+/* b) child combinatory (direct child) */
+
+div > a {
+  color: lightseagreen;
+}
+
+/* c) Adjacent combinatory(right after sibling) */
+
+div + a {
+  color: lightseagreen;
+}
+
+/* d) General sibling combinatory (all sibling) */
+
+div ~ a {
+  color: lightseagreen;
+}
+
+/* 8) Add selector */
+
+/* a) general sibling combinatory */
+
+h1,
+p {
+  color: red;
+}

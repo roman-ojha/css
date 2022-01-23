@@ -1,0 +1,45 @@
+/*
+multiple line
+comment 
+*/
+
+/* 
+Three ways to insert CSS
+* External CSS
+* Internal CSS
+* Inline CSS
+*/
+
+/* 
+Three type of selector
+* Element selector
+* ID selector
+* Class selector
+*/
+
+p {
+  color: red;
+}
+
+#decoration {
+  text-decoration: underline;
+  font-size: 50px;
+}
+
+#p3 {
+  /* for perticuler element or tag  we use id*/
+  color: darkblue;
+}
+#p4 {
+  color: darkmagenta;
+}
+.green-text {
+  color: darkolivegreen;
+}
+#h {
+  font-size: 50px;
+  color: lightpink;
+}
+.underline-h {
+  text-decoration: underline;
+}

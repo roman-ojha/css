@@ -1,0 +1,87 @@
+/* every element have there rectanguler box and how that box will behave 
+is depend on display property */
+
+/* 
+
+every element contain there display property 
+here display property have mainly 4 value:
+1) block
+->    block take whole width
+    I)   this will start with new line
+    II)  this will take full width
+    III) you can apply height and width
+ex:
+a) div
+b) p
+c) h1-h6
+d) form
+etc....
+
+2) inline 
+->    inline take take that much that is needed
+    I)   this will not start with new line
+    II)  this will not take full width
+    III) you can't apply height and width
+ex:
+a)a
+b)img
+c)span
+d)etc..
+
+3) inline-block
+->    it also have inline proporty but it take height and width
+    I)   this will not start with new line
+    II)  this will not take full width
+    III) you can apply height and width
+
+4) none 
+->   if you want to remove emelemt then you can remove(hide) any element by using none
+*/
+
+.display1 {
+  border: 1px solid red;
+  width: 50%;
+  height: 100px;
+}
+
+.display2 {
+  border: 1px solid red;
+  display: inline;
+}
+/* display: inline; -> after writing this it behave as an inline  */
+
+.display3 {
+  border: 1px solid red;
+  display: inline-block;
+}
+
+.display4 {
+  border: 1px solid red;
+  width: 50%;
+  height: 100px;
+  display: inline-block;
+}
+
+.display5 {
+  border: 1px solid red;
+  width: 50%;
+  height: 100px;
+  display: inline-block;
+}
+
+#div1 {
+  display: none;
+}
+/* you can remove(hide) any element by using none */
+
+/* you can do same by: */
+#div2 {
+  visibility: hidden;
+}
+/* visibility: hidden; ->but is take space */
+
+/* for span element you can change it into block element by:  */
+#span {
+  border: 1px solid red;
+  display: block;
+}

@@ -1,0 +1,68 @@
+/* if one element is style by more than one rule,which style will be aplicable */
+/*
+
+
+example:
+
+html:
+----------
+<div>
+<p class="red-p">Text..... </p>
+</div>
+
+CSS:
+-----------
+p{
+    color:green;
+}
+.red-p{
+    color:red;
+}
+div.red-p{
+    color:blue;
+}
+
+we are targating the same element by different selector 
+now spacificity rule will decide which selector value will apply to the 
+element .
+more spacific rule will get more value.
+
+more spacific means in how much detail that selector defain the element 
+
+GENERAL RULE:
+* !important will override every thing
+* inline can override everything except !important
+* External will work according to specificity
+
+Specificity Rules:
+* (#) ID selector has higher value
+* (*) univarsal selector has lower value
+
+Specificity Rule Trick (point System)
+* 10,000 point to !important
+* 1000 to inline
+* 100 to id
+* 10 to class,attribute or pseudo-calss
+* 1 for element selector & pseudo elements
+* 0 to univarsal selector
+
+ex:
+
+(1 point) p{
+    color:green;
+}
+(10 point) .red-p{
+    color:red;
+}
+(10+1 point) div.red-p{
+    color:blue;
+}
+
+therefore div.red-p have more value that's why div.red-p selector value will apply
+to the element
+
+NOTE: if same rule written two or more times in external sheet then last rule 
+will be app;icable 
+
+
+*/

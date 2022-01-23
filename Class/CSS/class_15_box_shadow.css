@@ -1,0 +1,31 @@
+/* #div1 {
+  border: 1px solid green;
+  width: 50vw;
+  height: 10vh;
+  background-color: yellowgreen;
+  margin: 100px;
+  padding: 20px;
+  box-shadow: 10px 20px 5px 3px black inset;
+} */
+/* box-shadow: :horizontaly  verticaly  blar (spred radius)  color  inside*/
+
+/* #div1 {
+  border: 1px solid green;
+  width: 50vw;
+  height: 10vh;
+  background-color: yellowgreen;
+  margin: 100px;
+  padding: 20px;
+  box-shadow: 10px 20px 5px 3px black;
+} */
+
+#div1 {
+  border: 1px solid green;
+  width: 50vw;
+  height: 10vh;
+  background-color: yellowgreen;
+  margin: 100px;
+  padding: 20px;
+  box-shadow: 10px 20px 10px 3px black, -10px 25px 10px 3px red;
+}
+/* box-shadow: :horizontaly  verticaly  blar (spred radius)  color  , multiple shadow*/

@@ -1,0 +1,45 @@
+/*
+ selector:pesudo-class{
+
+}
+ */
+
+/* li:first-child {
+  color: red;
+} */
+/* li:first-child -> it means that we are coloring first element of li tag */
+
+/* li:last-child {
+  color: green;
+}
+
+li:nth-child(4) {
+  color: blue;
+} */
+
+/* li:nth-child(odd) {
+  color: blue;
+}
+li:nth-child(even) {
+  color: green;
+} */
+
+/* li:nth-child(3n + 0) {
+  color: indigo;
+} */
+/* li:nth-child(3n+0) -> n=0,1,2,3,4,5.... */
+
+/* li:nth-child(3n + 1) {
+  color: indigo;
+} */
+
+li:nth-last-child(2) {
+  color: indigo;
+}
+
+input:focus {
+  border: 3px solid red;
+}
+
+/* you can go to the website to know about all the pseudo classes:
+https://www.w3schools.com/css/css_pseudo_classes.asp */

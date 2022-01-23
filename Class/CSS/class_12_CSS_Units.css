@@ -1,0 +1,165 @@
+/*
+
+Css unit:
+*we use length in width,height,margin,padding,font-size
+
+*there are two type of unit in css
+a) Absolute
+b) Relative
+
+a) Absolute unit in css: this does not depend on others
+1.cm
+2.Mm
+3.in (inch)
+4.px (1inch=96px) this is the average
+5.pt (1inch=72pt)
+6.pc (1pc=12pt)
+
+b) Relative unit in css: this depends on others
+1.Em -em is relative to the size of its direct parent
+2.Rem - rem is only relative to root (html tag) size
+3.Vh - 1% of view port height -it compare with browser height
+4.Vw - 1% of view port width -it compare with widht
+5.% - relative to parent 
+6.vmin - vmin value will be that value either vm or vh which is minimum that will going to be the value of vmin
+
+*/
+
+/*
+  # Em:
+    <div class="parent1">
+        <div class="parent2">
+            <div class="parent3">
+                <h1>Hello</h1>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        .parent1{
+          font-size:2em; => where parent1 parent is <html> tag , default <html> font size is 16px
+          therefore, font-size = 2*16px = 32px
+        }
+        .parent2{
+          font-size:2em =>parent2 parent font-size is 32px unit
+          therefore, font-size = 2*32px = 64px
+        }
+        .parent3{
+          font-size:2em =>parent3 parent font-size is 64px unit
+          therefore, font-size = 2*64px = 128px
+        }
+        h1{
+          font-size:2em =>h1 parent font-size is 128px unit
+          therefore, font-size = 2*128px = 256px (compounding) 
+        }
+        // NOTE: in em rather then font-size all the property will look the unit value to its own element font-size and work according to that
+    </style>
+
+  # Rem:
+        html{
+          font-size: 10px
+        }
+
+        child{
+          font-size: 2rem , here font-size of html element is 10 px
+          therefore font-size : 2*10px = 20px
+        }
+*/
+
+/* #parent {
+  border: 1px solid red;
+  width: 10cm;
+} */
+
+/* #parent {
+  border: 1px solid red;
+  width: 100mm;
+} */
+
+/* #parent {
+  border: 1px solid red;
+  width: 5in;
+} */
+
+/* #parent {
+  border: 1px solid red;
+  width: 500px;
+} */
+
+/* #parent {
+  border: 1px solid red;
+  width: 500pt;
+} */
+
+/* #parent {
+  border: 1px solid red;
+  width: 500pc;
+} */
+
+/* #parent {
+  border: 1px solid red;
+  width: 800px;
+}
+#child {
+  border: 1px solid blue;
+  width: 50%;
+} */
+
+/* #parent {
+  border: 1px solid red;
+  height: 50vh;
+  width: 50vw;
+}
+#child {
+  border: 1px solid blue;
+  width: 50%;
+} */
+
+/* #parent {
+  font-size: 30px;
+}
+#child {
+  font-size: 0.5em;
+} */
+/* child= font-size: 0.5*30px=15px */
+
+/* #parent {
+  font-size: 30px;
+}
+#child {
+  font-size: 2em;
+} */
+/* child= font-size: 2*30px=60px */
+
+/* html {
+  font-size: 14px;
+}
+#parent {
+  font-size: 30px;
+}
+#child {
+  font-size: 2rem;
+} */
+/* child= font-size: 2*14px=28px */
+/* parent is html tag */
+
+/* html {
+  font-size: 14px;
+}
+#parent {
+  font-size: 4rem;
+}
+#child {
+  font-size: 2rem;
+} */
+/*parent= font-size: 4*14px=56px */
+
+html {
+  font-size: 14px;
+}
+#parent {
+  font-size: 10vw;
+}
+#child {
+  font-size: 2rem;
+}

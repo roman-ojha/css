@@ -1,0 +1,74 @@
+#parent {
+  padding: 20px;
+  width: 50%;
+  margin: 100px;
+  position: relative;
+}
+
+#one {
+  width: 100px;
+  height: 100px;
+  background-color: green;
+  display: inline-block;
+  position: relative;
+}
+#two {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  display: inline-block;
+  position: relative;
+  top: 50px;
+  left: -50px;
+}
+
+#three {
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  display: inline-block;
+  position: relative;
+  top: 100px;
+  left: -100px;
+}
+/* -------------------------------------------------------------------------- */
+/* in z-index */
+/* to use z-index property element need to have relative,absolute or fixed postion */
+/* the element which have more z-index value that will be at the top 
+and there is no any upper limit and lower limit value*/
+#parent2 {
+  padding: 20px;
+  width: 50%;
+  margin: 100px;
+  position: relative;
+}
+
+#one2 {
+  width: 100px;
+  height: 100px;
+  background-color: green;
+  display: inline-block;
+  position: relative;
+  z-index: 3;
+}
+#two2 {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  display: inline-block;
+  position: relative;
+  top: 50px;
+  left: -50px;
+  z-index: 2;
+}
+
+#three2 {
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  display: inline-block;
+  position: relative;
+  top: 100px;
+  left: -100px;
+  z-index: 1;
+}

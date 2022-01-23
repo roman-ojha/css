@@ -1,0 +1,46 @@
+@keyframes Animation {
+  0% {
+    background-color: darkcyan;
+  }
+  10% {
+    background-color: darkblue;
+  }
+  20% {
+    background-color: darkgoldenrod;
+  }
+  30% {
+    background-color: darkgreen;
+  }
+  40% {
+    background-color: darkmagenta;
+  }
+  50% {
+    background-color: darkolivegreen;
+  }
+  60% {
+    background-color: darkviolet;
+  }
+  70% {
+    background-color: darkred;
+  }
+  80% {
+    background-color: lightcoral;
+  }
+  90% {
+    background-color: lightgreen;
+  }
+  100% {
+    background-color: darkcyan;
+  }
+}
+
+#div1 {
+  width: 250px;
+  height: 250px;
+  border: 1px solid red;
+  background-color: darkcyan;
+  animation-name: Animation;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}

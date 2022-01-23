@@ -1,0 +1,346 @@
+/* from flexbox you can make flexible and resposive desigi without using float 
+and position */
+
+.flex-container1 {
+  background-color: indianred;
+}
+.flex-child1 {
+  background-color: wheat;
+  margin: 20px;
+  padding: 20px;
+  display: inline-block;
+}
+
+.flex-container2 {
+  background-color: indianred;
+  display: flex;
+}
+.flex-child2 {
+  background-color: wheat;
+  margin: 20px;
+  padding: 20px;
+}
+
+.flex-container3 {
+  background-color: indianred;
+  display: flex;
+  flex-direction: row-reverse;
+}
+.flex-child3 {
+  background-color: wheat;
+  margin: 20px;
+  padding: 20px;
+}
+
+.flex-container4 {
+  background-color: indianred;
+  display: flex;
+  flex-direction: column;
+}
+.flex-child4 {
+  background-color: wheat;
+  margin: 20px;
+  padding: 20px;
+}
+
+.flex-container5 {
+  background-color: indianred;
+  display: flex;
+  flex-direction: column;
+}
+.flex-child5 {
+  background-color: wheat;
+  margin: 20px;
+  padding: 20px;
+  width: 40px;
+}
+
+.flex-container6 {
+  background-color: indianred;
+  display: flex;
+  flex-direction: column-reverse;
+}
+.flex-child6 {
+  background-color: wheat;
+  margin: 20px;
+  padding: 20px;
+  width: 40px;
+}
+
+.flex-container7 {
+  background-color: indianred;
+  display: flex;
+  flex-wrap: nowrap;
+}
+.flex-child7 {
+  background-color: wheat;
+  margin: 20px;
+  padding: 20px;
+  width: 100px;
+  text-align: center;
+}
+
+.flex-container8 {
+  background-color: indianred;
+  display: flex;
+  flex-wrap: wrap;
+}
+.flex-child8 {
+  background-color: wheat;
+  margin: 20px;
+  padding: 20px;
+  width: 100px;
+  text-align: center;
+}
+
+.flex-container9 {
+  background-color: indianred;
+  display: flex;
+  flex-wrap: wrap;
+}
+.flex-child9 {
+  background-color: wheat;
+  margin: 20px;
+  padding: 20px;
+  width: 100px;
+  text-align: center;
+}
+
+.flex-container10 {
+  background-color: indianred;
+  display: flex;
+  flex-wrap: wrap-reverse;
+}
+.flex-child10 {
+  background-color: wheat;
+  margin: 20px;
+  padding: 20px;
+  width: 100px;
+  text-align: center;
+}
+
+.flex-container11 {
+  background-color: indianred;
+  display: flex;
+  flex-flow: row wrap;
+}
+/* flex-flow: <direction> <flex-wrap> */
+.flex-child11 {
+  background-color: wheat;
+  margin: 20px;
+  padding: 20px;
+  width: 100px;
+  text-align: center;
+}
+
+.flex-container12 {
+  background-color: indianred;
+  display: flex;
+  justify-content: center;
+}
+.flex-child12 {
+  background-color: wheat;
+  margin: 20px;
+  padding: 20px;
+  width: 100px;
+  text-align: center;
+}
+
+.flex-container13 {
+  background-color: indianred;
+  display: flex;
+  justify-content: space-around;
+  /* justify-content: space-between; */
+}
+.flex-child13 {
+  background-color: wheat;
+  margin: 20px;
+  padding: 20px;
+  width: 100px;
+  text-align: center;
+}
+
+.flex-container14 {
+  background-color: indianred;
+  display: flex;
+  justify-content: space-around;
+  height: 300px;
+}
+.flex-child14 {
+  background-color: wheat;
+  margin: 20px;
+  padding: 20px;
+  width: 100px;
+  text-align: center;
+}
+
+.flex-container14 {
+  background-color: indianred;
+  display: flex;
+  justify-content: space-around;
+  height: 300px;
+  align-items: center;
+  /* align-items: flex-start; */
+  /* align-items: flex-end; */
+  /* align-items: stretch; (default)*/
+}
+.flex-child14 {
+  background-color: wheat;
+  margin: 20px;
+  padding: 20px;
+  width: 100px;
+  text-align: center;
+}
+
+.flex-container15 {
+  background-color: indianred;
+  display: flex;
+  height: 300px;
+  align-items: stretch;
+  flex-wrap: wrap;
+  /* align-content: stretch; (default)*/
+  /* align-content: space-between; */
+  /* align-content: flex-end; */
+  /* align-content: flex-start;*/
+  align-content: space-around;
+}
+.flex-child15 {
+  background-color: wheat;
+  margin: 20px;
+  padding: 20px;
+  width: 100px;
+  text-align: center;
+}
+
+.flex-container16 {
+  background-color: indianred;
+  display: flex;
+  height: 45vh;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: center; /*will work in herizontal*/
+  align-content: center; /*will work in vertical*/
+}
+.flex-child16 {
+  background-color: wheat;
+  margin: 20px;
+  padding: 20px;
+  width: 100px;
+  text-align: center;
+}
+
+/* For child ------------------------------------------------------------- */
+
+.flex-container17 {
+  background-color: indianred;
+  display: flex;
+  height: 40vh;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: center; /*will work in herizontal*/
+  align-content: center; /*will work in vertical*/
+}
+.flex-child17 {
+  background-color: wheat;
+  margin: 20px;
+  padding: 20px;
+  width: 100px;
+  text-align: center;
+}
+#one {
+  order: 2;
+}
+#two {
+  order: 3;
+}
+#three {
+  order: 1;
+}
+
+.flex-container18 {
+  background-color: indianred;
+  display: flex;
+}
+.flex-child18 {
+  background-color: wheat;
+  margin: 20px;
+  padding: 20px;
+  width: 100px;
+  text-align: center;
+}
+#one2 {
+  flex-grow: 1;
+  /* flex-grow: 1; */
+}
+#two2 {
+  flex-grow: 1;
+  /* flex-grow: 2; */
+}
+#three2 {
+  flex-grow: 1;
+  /* flex-grow: 1; */
+}
+
+.flex-container19 {
+  background-color: indianred;
+  display: flex;
+}
+.flex-child19 {
+  background-color: wheat;
+  margin: 20px;
+  padding: 20px;
+  width: 100px;
+  text-align: center;
+}
+#one3 {
+  flex-shrink: 3;
+}
+#two3 {
+  flex-shrink: 2;
+}
+#three3 {
+  flex-shrink: 4;
+}
+
+.flex-container20 {
+  background-color: indianred;
+  display: flex;
+}
+.flex-child20 {
+  background-color: wheat;
+  margin: 20px;
+  padding: 20px;
+  width: 100px;
+  text-align: center;
+}
+#one4 {
+  flex-basis: 100px;
+}
+#two4 {
+  flex-basis: 200px;
+}
+#three4 {
+  flex-basis: 300px;
+}
+
+.flex-container21 {
+  background-color: indianred;
+  display: flex;
+  height: 400px;
+}
+.flex-child21 {
+  background-color: wheat;
+  margin: 20px;
+  padding: 20px;
+  width: 100px;
+  text-align: center;
+}
+#one5 {
+  align-self: flex-start;
+}
+#two5 {
+  align-self: center;
+}
+#three5 {
+  align-self: flex-end;
+}

@@ -1,0 +1,51 @@
+/* 
+
+CSS colors can be specified using :
+1.predefine color names
+2.RGB
+3.RGBA
+4.HEX
+5.HSL
+6.HSLA 
+
+1.Pre Define Color Names:
+ * Modern browsers support 140 named colors
+ * https://htmlcolorcodes.com/color-names/
+
+2.RGB
+ * rgb(red,green,blue)
+ * color value between 0 and 255
+ * Black:rgb(0,0,0)
+ * white:rgb(255,255,255)
+ *red:rgb(255,0,0)
+ *green:rgb(0,255,0)
+ *blue:rgb(0,0,255)
+
+3.RGBA
+ * rgb(red,green,blue,alpha)
+ * alpha parameter is number between 0.0(fully tansparent) and 1.0
+  (not transparent at all)
+ * rgba(255,99,71,0.5)
+
+4.HEX
+ * #rrggbb
+ * rr(red),gg(green) and bb(blue)
+ * hexadecimal values between 00 and ff (same as decimal 0-255)
+ * red:#ff0000
+ * black:#000000
+ * white:#ffffff
+
+5.HSL
+ * hsl(hue,saturation,lightness)
+ * hue,saturation,and lightness(HSL)
+ * Hue is a degree on the color wheel from 0 to 360,0 is red, 120 is green, and 240 is blue.
+ * saturation is a percentage value, 0% means a shade of gray, and 100% is the full color.
+ * lightness is also a percentage, 0% is black, 50% is neither light or dark, 100% is white.
+ * RED:  hsl(0,100%,50%)
+
+6.HSLA 
+ * hsla(hue,saturation,lightness,alpha)
+ * alpha parameter is number between 0.0(fully tansparent) and 1.0
+  (not transparent at all)
+ * hsl(0,100%,50%,0.5)
+*/

@@ -1,0 +1,58 @@
+@font-face {
+  font-family: abc; /* if we are using font family name:roman ojha ,  with two words then it will not going to work so you have to written it in "Roman ojha" */
+  src: url("Fonts/Aclonica.ttf");
+}
+/* #h1 {
+  font-weight: 200;
+} */
+/* you can give upto 900 in font-weight */
+/* you can use 100,200,300,400,500..... */
+
+#h1 {
+  font-family: "Raleway", sans-serif;
+}
+
+/* #p1 { 
+  font-size: 30px;
+  font-weight: bold;
+  font-style: italic;
+} */
+
+/* #p1 {
+  font-variant: small-caps; 
+  font-size: 30px;
+} */
+/* it make all the font capital */
+
+/* to use different kind of font style you need to download the font file and need to link to use that font style */
+/* the font formate in which all the browser support is: ttf , otf , woff */
+
+/* so firstaly from google font */
+/* website for google fonts: https://fonts.google.com/ */
+
+/* #p1 {
+  font-variant: small-caps;
+  font-size: 30px;
+} */
+
+#p1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+/* you can download font file and can use it */
+
+#h2 {
+  font-family: abc;
+}
+
+/* #p2 {
+  font-family: abc, "Poppins", sans-serif;
+} */
+/* font-family: abc, ("Poppins", sans-serif) we use extra font style because if it didnot find first font then it will fallback and can use another */
+
+/* shorthand */
+#p2 {
+  font: italic small-caps 600 20px "Poppins";
+}

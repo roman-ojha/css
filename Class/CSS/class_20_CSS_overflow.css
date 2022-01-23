@@ -1,0 +1,43 @@
+/* if contain is greater then the element block then we use css overflow */
+/* #div1 {
+  background-color: whitesmoke;
+  border: 1px solid red;
+  width: 500px;
+  height: 400px;
+  overflow: hidden;
+} */
+
+/* #div1 {
+  background-color: whitesmoke;
+  border: 1px solid red;
+  width: 500px;
+  height: 400px;
+  overflow: hidden;
+} */
+
+/* #div1 {
+  background-color: whitesmoke;
+  border: 1px solid red;
+  width: 500px;
+  height: 400px;
+  overflow-y: scroll;
+} */
+
+#div1 {
+  background-color: whitesmoke;
+  border: 1px solid red;
+  width: 500px;
+  height: 400px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+#div2 {
+  background-color: whitesmoke;
+  border: 1px solid red;
+  width: 500px;
+  height: 400px;
+  margin-top: 20px;
+  overflow: auto;
+}
+/* overflow auto is most important because it automaticly do if content is greter then block then it will automatic put scroll bar */

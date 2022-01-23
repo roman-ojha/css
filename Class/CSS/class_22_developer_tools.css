@@ -1,0 +1,119 @@
+/* you can go to chrome browser and open the page that you made and right click on that 
+page and select inspect then you can watch, temporary edit the page file and can see 
+what will happen if i will do another setting and you can take good referance from that  
+*/
+
+#div1 {
+  background-color: hsl(120, 30%, 25%);
+  padding: 10px;
+}
+#h1 {
+  color: darkorange;
+}
+#anchor1 {
+  font-size: 60px;
+  text-decoration: none;
+}
+
+#anchor1:link {
+  color: darkred;
+}
+#anchor1:visited {
+  color: darkblue;
+}
+
+#anchor1:hover {
+  color: red;
+}
+
+#anchor1:active {
+  color: black;
+}
+
+@font-face {
+  font-family: "roman ojha";
+  src: url("Fonts/Aclonica.ttf");
+}
+#h2 {
+  font-weight: 800;
+  font-variant: small-caps;
+  color: brown;
+  font-family: "roman ojha";
+  font-style: inherit;
+}
+
+#p1 {
+  color: lightsalmon;
+  font-weight: 800;
+  font-size: 30px;
+  text-decoration: underline;
+  font-variant: small-caps;
+  /* font-family: "roman ojha"; */
+  font-style: italic;
+  font-family: "Courier New", Courier, monospace;
+}
+
+#div3 {
+  border: 2px solid red;
+  background-color: brown;
+}
+
+#p2 {
+  font-size: 40px;
+  text-decoration: underline;
+  font-variant: small-caps;
+  text-transform: capitalize;
+  color: darkorange;
+  cursor: wait;
+}
+
+#div4 {
+  border: 2px solid red;
+  background-color: rgb(75, 7, 66);
+  margin-top: 30px;
+  width: 50vw;
+  height: 13vh;
+  box-shadow: 10px 10px 5px rgb(136, 12, 119), -20px -10px 8px rgb(182, 66, 166);
+}
+
+#div5 {
+  border: 2px solid red;
+  background-color: rgb(40, 38, 70);
+  margin-top: 30px;
+  height: 13vh;
+  opacity: 0.7;
+}
+
+#div6 {
+  border: 1px solid black;
+  height: 500px;
+  margin-top: 20px;
+  background-image: linear-gradient(140deg, green 30%, blue 40%, red);
+}
+
+#div7 {
+  border: 1px dotted black;
+  margin-top: 20px;
+  height: 16cm;
+  width: 18cm;
+  background-image: radial-gradient(circle, red 20%, blue, green 80%);
+}
+
+#div8 {
+  border: 3px solid lightslategray;
+  background-color: lightgray;
+  width: 600px;
+  height: 500px;
+  overflow-y: auto;
+  overflow-x: auto;
+  resize: both;
+}
+
+#textarea1 {
+  margin-top: 20px;
+  resize: none;
+  width: 400px;
+  height: 150px;
+  border: 4px solid lightskyblue;
+  overflow-y: auto;
+}

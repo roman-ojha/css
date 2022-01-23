@@ -1,0 +1,126 @@
+@font-face {
+  font-family: "Font 1";
+  src: url("fonts/Aclonica.ttf");
+}
+
+body {
+  background-color: rgb(140, 221, 221);
+}
+
+#ol1 {
+  font-size: 20px;
+  font-family: "font 1";
+  color: rgb(21, 10, 126);
+  list-style-type: upper-roman;
+}
+#ul1 {
+  font-size: 20px;
+  font-family: "font 1";
+  font-style: italic;
+  text-decoration: underline;
+  color: rgb(131, 9, 9);
+  list-style-image: url("pictures/Arrow\ 01.png");
+}
+
+li {
+  border: 1px solid brown;
+  background-color: chartreuse;
+  width: 300px;
+  list-style-position: inside;
+}
+
+:root {
+  --tableheading: darkorchid;
+  --tabledata: darkslategrey;
+  --datacolor: darkorange;
+  --headingcolor: darkblue;
+}
+
+table {
+  border: 2px solid black;
+  caption-side: bottom;
+  background-color: goldenrod;
+  /* border-collapse: collapse; */
+  empty-cells: hide;
+  table-layout: auto;
+  width: 100%;
+}
+
+caption {
+  border: 2px solid black;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: firebrick;
+}
+
+th {
+  border: 3px solid black;
+  font-size: 20px;
+  color: var(--headingcolor);
+  width: 100px;
+  height: 50px;
+  text-align: left;
+  background-color: var(--tableheading);
+  vertical-align: top;
+}
+
+td {
+  border: 2px solid black;
+  font-size: 20px;
+  height: 40px;
+  color: var(--datacolor);
+  text-transform: capitalize;
+  text-align: right;
+  background-color: var(--tabledata);
+  vertical-align: bottom;
+}
+
+#div1 {
+  width: calc(100% - 200px);
+}
+
+#div2 {
+  border: 30px solid black;
+  font-size: 20px;
+  height: 200px;
+  width: 700px;
+  margin: 30px;
+  padding: 50px;
+  color: var(--datacolor);
+  background-color: var(--tabledata);
+  box-sizing: border-box;
+}
+
+#img1 {
+  border: 1px solid red;
+  width: 700px;
+  height: 400px;
+  object-fit: contain;
+  object-position: left;
+}
+
+li:nth-child(odd) {
+  color: darkred;
+}
+li:nth-child(even) {
+  color: darkblue;
+}
+
+#ol2 {
+  font-size: 20px;
+  font-family: "font 1";
+  list-style-type: upper-roman;
+}
+#ul2 {
+  font-size: 20px;
+  font-family: "font 1";
+  font-style: italic;
+  text-decoration: underline;
+}
+
+li {
+  border: 1px solid brown;
+  background-color: chartreuse;
+  width: 300px;
+  list-style-position: inside;
+}

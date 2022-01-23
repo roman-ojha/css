@@ -1,0 +1,113 @@
+/* #border {
+  border-style: solid;
+} */
+
+/* #border {
+  border-style: dotted;
+} */
+
+/* #border {
+    border-style: dashed;
+} */
+
+/* #border {
+  border-style: double;
+} */
+
+/* #border {
+  border-style: groove;
+} */
+
+/* #border {
+  border-style: outset;
+} */
+
+/* #border {
+  border-style: inset;
+} */
+
+/* #border {
+  border-style: ridge;
+} */
+
+/* #border {
+  border-style: none;
+} */
+
+/* #border {
+  border-style: solid dashed none dotted;
+} */
+/* border-style: top right bottom left */
+
+/* #border {
+  border-style: solid dotted;
+} */
+/* border-style: (top,bottom) (left,right) */
+
+/* #border {
+  border-style: solid;
+  border-width: 5px 10px;
+} */
+/* border-width: (top,bottom) (left,right) */
+
+/* #border {
+  border-style: solid;
+  border-width: 5px 10px 15px 20px;
+} */
+/* border-width: top right bottom left */
+
+/* #border {
+  border-style: solid;
+  border-width: 5px 10px 15px 20px;
+  border-color: red blue green purple;
+} */
+/* border-color: top right bottom left */
+
+/* Shortcut */
+/* #border {
+  border: 5px solid green;
+} */
+/* border: width style color */
+
+/* for one side */
+/* #border {
+  border-top-style: solid;
+  border-top-width: 5px;
+  border-top-color: brown;
+} */
+
+/* #border {
+  border-style: solid;
+  border-width: 5px;
+  border-color: brown;
+  border-radius: 10px;
+} */
+/* border-radius: for curve in side  */
+
+/* #border {
+  border-style: solid;
+  border-width: 5px;
+  border-color: brown;
+  border-radius: 50%;
+} */
+
+/* #border {
+  border-style: solid;
+  border-width: 5px;
+  border-color: brown;
+  border-radius: 10px 15px 20px 25px;
+} */
+
+/* #border {
+  border-style: solid;
+  border-width: 5px;
+  border-color: brown;
+  border-top-right-radius: 20px;
+} */
+
+#border {
+  border-style: solid;
+  border-width: 5px;
+  border-color: brown;
+  border-bottom-right-radius: 20px;
+}

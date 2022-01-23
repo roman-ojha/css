@@ -1,0 +1,35 @@
+/* for a 3D transfoms there need to have praspective of form where the person 
+is watching  */
+/* syntex
+transform:praspective(300px) rorate3d();
+prespective-origin :50% ->x 50%; ->y */
+
+#cover1 {
+  border: 2px solid red;
+  height: 200px;
+  width: 200px;
+  margin: 150px;
+}
+
+#content1 {
+  height: 200px;
+  width: 200px;
+  background-color: yellowgreen;
+  transform: perspective(300px) rotate3d(50, 0, 50, 20deg);
+  /* perspective-origin: 50% 50%; */
+}
+/* rotate3d(50, 0, 0, 20deg);(x-axis, y-axis, z-axis, degree) */
+
+#cover2 {
+  border: 2px solid red;
+  height: 200px;
+  width: 200px;
+  margin: 150px;
+}
+
+#content2 {
+  height: 200px;
+  width: 200px;
+  background-color: yellowgreen;
+  transform: perspective(300px) translate3d(0px, 0px, -110px);
+}

@@ -1,0 +1,118 @@
+/* transition means if we want to make a movement in object then we use transition */
+/* for a trnasition two property is importent without that teansition is not posible : transition-property, transition-duration */
+
+#div1 {
+  height: 100px;
+  width: 100px;
+  background-color: red;
+  margin: 100px;
+  transition-property: width;
+  transition-duration: 1s;
+}
+
+#div1:hover {
+  width: 200px;
+}
+
+#div2 {
+  height: 100px;
+  width: 100px;
+  background-color: red;
+  margin: 100px;
+  transition-property: background-color;
+  transition-duration: 1s;
+}
+
+#div2:hover {
+  background-color: green;
+}
+
+#div3 {
+  height: 100px;
+  width: 100px;
+  background-color: red;
+  margin: 100px;
+  transition-property: width, background-color;
+  transition-duration: 1s;
+}
+
+#div3:hover {
+  width: 200px;
+  background-color: green;
+}
+
+#div4 {
+  height: 100px;
+  width: 100px;
+  background-color: red;
+  margin: 100px;
+  transition-property: all;
+  transition-duration: 1s;
+}
+
+#div4:hover {
+  width: 200px;
+  background-color: green;
+  height: 200px;
+}
+
+#div5 {
+  height: 100px;
+  width: 100px;
+  background-color: red;
+  margin: 100px;
+  transition-property: all;
+  transition-duration: 1s;
+  transition-delay: 500ms;
+}
+
+#div5:hover {
+  width: 200px;
+  background-color: green;
+  height: 200px;
+}
+
+#div6 {
+  height: 100px;
+  width: 100px;
+  background-color: red;
+  margin: 100px;
+  transition-property: all;
+  transition-duration: 1s;
+  transition-delay: 500ms;
+  transition-timing-function: ease-in-out;
+}
+
+#div6:hover {
+  width: 200px;
+  background-color: green;
+  height: 200px;
+}
+
+#div7 {
+  height: 100px;
+  width: 100px;
+  background-color: red;
+  margin: 100px;
+  /* transition: property ,duration,timing function,delay; */
+  transition: all 1s ease-in-out 500ms;
+}
+
+#div7:hover {
+  width: 200px;
+  background-color: green;
+  height: 200px;
+}
+
+#div8 {
+  height: 100px;
+  width: 100px;
+  background-color: red;
+  margin: 100px;
+  transition: width 2s, height 3s;
+}
+
+#div8:hover {
+  width: 200px;
+  height: 200px;
+}

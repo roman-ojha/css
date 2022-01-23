@@ -1,0 +1,36 @@
+/*
+  *{
+    is a univarsal selectors
+  }
+*/
+
+/*
+ selector::pesudo-element{
+
+}
+ */
+
+/* p::first-letter {
+  font-size: 35px;
+  color: red;
+} */
+
+p::first-line {
+  font-size: 35px;
+  color: red;
+}
+
+h1::before {
+  content: url("Pictures/Arrow\ 01.png");
+}
+
+h1::after {
+  content: " added in css ";
+}
+
+::selection {
+  color: red;
+  background: yellow;
+}
+/* ::selection -> if you selecting some content */
+/* :: is for universal */

@@ -1,0 +1,8 @@
+/* we can seperate contain from image like doing crop */
+/* it can only use as an background image */
+#img1 {
+  height: 72px;
+  width: 105px;
+  background-image: url("Pictures/Flag\ 01.jpg");
+  background-repeat: no-repeat;
+}

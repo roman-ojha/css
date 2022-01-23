@@ -1,0 +1,40 @@
+#div1 {
+  background-color: blueviolet;
+  width: 600px;
+  height: 150px;
+}
+/* #div2 {
+  background-color: chocolate;
+  width: 600px;
+  height: 150px;
+  padding: 50px;
+  border: 50px solid black;
+} */
+
+/* by doing this padding ,border and take a space and after addition of all
+size that body(container) will become bigger but if you want to make the same body size 
+then you can do it by box sizing in which the size of the padding and border 
+will be same but the size of the content will be decrease */
+
+/* #div2 {
+  background-color: chocolate;
+  width: 600px;
+  height: 150px;
+  padding: 50px;
+  border: 50px solid black;
+  box-sizing: content-box;
+} */
+
+/* box-sizing: content-box; ->default */
+
+#div2 {
+  background-color: chocolate;
+  width: 600px;
+  height: 150px;
+  padding: 50px;
+  border: 50px solid black;
+  box-sizing: border-box;
+}
+/* box-sizing: border-box; -> in here the size of the content is decrease */
+
+/* to change the proporty of the box model we use box sizing */

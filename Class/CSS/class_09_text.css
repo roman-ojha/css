@@ -1,0 +1,217 @@
+/* Compile  */
+/* #text {
+  width: 600px;
+  border: 1px solid black;
+  color: blueviolet;
+  font-size: 20px;
+  text-align: justify;
+  direction: rtl;
+  vertical-align: top;
+  text-decoration: line-through;
+  text-transform: capitalize;
+  line-height: 20px;
+  text-indent: 30px;
+  letter-spacing: 1px;
+  word-spacing: 20px;
+  white-space: nowrap;
+  word-wrap: break-word;
+  font-size: 70px;
+  text-shadow: 5px 10px 10px black;
+  writing-mode: vertical-rl;
+} */
+
+/* #text {
+  border: 1px solid black;
+  width: 500px;
+  color: darkblue;
+  text-align: right;
+} */
+/* text-align: by default left */
+
+/* #text {
+  border: 1px solid black;
+  width: 500px;
+  color: darkblue;
+  text-align: center;
+} */
+
+/* #text {
+  border: 1px solid black;
+  width: 500px;
+  color: darkblue;
+  text-align: justify;
+} */
+/* text-align: justify will cover all the area */
+
+/* #text {
+  border: 1px solid black;
+  width: 500px;
+  color: darkblue;
+  direction: rtl;
+} */
+/* direction: right to left */
+
+/* to make image vertical align with text */
+#text {
+  border: 1px solid black;
+  width: 500px;
+  color: darkblue;
+  text-align: center;
+}
+#img1 {
+  border: 4px solid darkblue;
+  vertical-align: top;
+}
+
+/* #text {
+  border: 1px solid black;
+  width: 500px;
+  color: darkblue;
+  text-align: center;
+}
+#img1 {
+  border: 4px solid darkblue;
+  vertical-align: middle;
+} */
+
+/* to decorate text */
+/* #text2 {
+  border: 1px solid black;
+  width: 600px;
+  text-decoration: underline;
+} */
+
+/* #text2 {
+  border: 1px solid black;
+  width: 600px;
+  text-decoration: overline;
+} */
+
+/* #text2 {
+  border: 1px solid black;
+  width: 600px;
+  text-decoration: line-through;
+} */
+
+/* #text2 {
+  border: 1px solid black;
+  width: 600px;
+  text-decoration: underline;
+  text-transform: uppercase;
+} */
+
+/* #text2 {
+  border: 1px solid black;
+  width: 600px;
+  text-decoration: underline;
+  text-transform: lowercase;
+} */
+
+/* #text2 {
+  border: 1px solid black;
+  width: 600px;
+  text-decoration: underline;
+  text-transform: capitalize;
+} */
+/* capitalize will every first letter of every word will capital */
+
+/* #text2 {
+  border: 1px solid black;
+  width: 600px;
+  text-decoration: underline;
+  text-transform: capitalize;
+  line-height: 30px;
+} */
+/* line-height: gap between two line */
+
+/* #text2 {
+  border: 1px solid black;
+  width: 600px;
+  text-decoration: underline;
+  text-transform: capitalize;
+  line-height: 0px;
+} */
+/* in 0px object will overlap */
+
+#text2 {
+  border: 1px solid black;
+  width: 600px;
+  text-decoration: underline;
+  text-transform: capitalize;
+  text-indent: 50px;
+}
+
+/* #text2 {
+  border: 1px solid black;
+  width: 600px;
+  text-decoration: underline;
+  text-transform: capitalize;
+  text-indent: 50px;
+  letter-spacing: 5px;
+} */
+
+/* #text2 {
+  border: 1px solid black;
+  width: 600px;
+  text-decoration: underline;
+  text-transform: capitalize;
+  text-indent: 50px;
+  word-spacing: 10px;
+} */
+
+/* #text3 {
+  border: 1px solid black;
+  width: 600px;
+  text-transform: capitalize;
+  text-indent: 50px;
+  word-spacing: 10px;
+  white-space: pre;
+} */
+/* white-space: if there is a gap between content in .html */
+
+#text3 {
+  border: 1px solid black;
+  width: 600px;
+  text-transform: capitalize;
+  text-indent: 50px;
+  word-spacing: 10px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  /* 'text-overflow' when we want to use dot dot dot at the end of text if text overflow */
+}
+/* nowrap will put content in single line */
+
+/* if a single word is longer then a container then we can use word-wrap to break the word */
+#text4 {
+  border: 1px solid black;
+  width: 200px;
+  height: 300px;
+  text-indent: 50px;
+  word-spacing: 10px;
+  word-wrap: break-word;
+}
+
+/* #shadow {
+  font-size: 70px;
+  text-transform: capitalize;
+  text-shadow: 5px 10px 5px darkred;
+} */
+/* text-shadow: :horizontaly  verticaly  blar color */
+
+#shadow {
+  font-size: 70px;
+  text-transform: capitalize;
+  text-shadow: 5px -10px 7px darkred;
+}
+
+/* #text5 {
+  border: 1px solid black;
+  width: 500px;
+  writing-mode: vertical-lr;
+} */
+
+#text5 {
+  border: 1px solid black;
+  width: 500px;
+  writing-mode: vertical-rl;
+}

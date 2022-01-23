@@ -1,0 +1,17 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+#nav-bar {
+  height: 75px;
+  width: 100%;
+  background-color: black;
+  display: inline-block;
+  opacity: 0.7;
+}
+
+#nav-list {
+  color: white;
+  position: relative;
+}

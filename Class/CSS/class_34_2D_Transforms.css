@@ -1,0 +1,86 @@
+/* form 2D transforms you can rotate,move,scle any object */
+/* you can use transform proporty to do that but but the drawback of transfom property
+is that it will not work with inline element */
+
+#div1 {
+  padding: 20px;
+  margin: 20px;
+}
+
+a {
+  text-decoration: none;
+  background-color: lightcoral;
+  padding: 10px 20px;
+  color: white;
+}
+
+#a1:hover {
+  display: inline-block;
+  transform: translate(50px, 50px);
+}
+
+#a2:hover {
+  display: inline-block;
+  transform: rotate(20deg);
+}
+#a3:hover {
+  display: inline-block;
+  transform: scale(1.5, 2);
+}
+/* transform: scale(1.5, 2); ->scale(1.5*20px(width), 2*20px(height)) */
+
+#a4:hover {
+  display: inline-block;
+  transform: scaleY(1.5);
+}
+
+#a5 {
+  text-decoration: none;
+  background-color: lightcoral;
+  padding: 10px 20px;
+  color: white;
+  display: inline-block;
+  transform: skew(20deg, 10deg);
+}
+
+#a6 {
+  text-decoration: none;
+  background-color: lightcoral;
+  padding: 10px 20px;
+  color: white;
+  display: inline-block;
+  transform: skew(20deg, 10deg);
+}
+
+/* by default transfom property will apply according to the center of the body  */
+/* but you can change from which part of the body you want to transform */
+
+#a6 {
+  text-decoration: none;
+  background-color: lightcoral;
+  padding: 10px 20px;
+  color: white;
+  display: inline-block;
+  transform: rotate(20deg);
+  transform-origin: 0% 100%;
+  /* transform-origin: top left; */
+}
+/* transform-origin: 0% ->x-axis 100% -> y-axis; */
+
+#a6 {
+  text-decoration: none;
+  background-color: lightcoral;
+  padding: 10px 20px;
+  color: white;
+  display: inline-block;
+  transform: matrix();
+  transform-origin: 0% 100%;
+}
+/* transform: matrix(scaleX(), skewY(),skewX(),scaleY(),translateX(),translateY()); */
+
+#div2 {
+  padding: 20px;
+  margin: 20px;
+  background-color: yellow;
+  transform: matrix(1, -0.5, 0, 1, 0, 0);
+}

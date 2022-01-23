@@ -1,0 +1,26 @@
+/* we can disable or enable textarea tag risizable frature by  */
+#textarea1 {
+  resize: none;
+}
+
+/* we can resize block element also by; */
+
+/* #div1 {
+  background-color: whitesmoke;
+  border: 1px solid red;
+  width: 500px;
+  height: 400px;
+  margin-top: 20px;
+  overflow: auto;
+  resize: horizontal;
+} */
+
+/* #div1 {
+  background-color: whitesmoke;
+  border: 1px solid red;
+  width: 500px;
+  height: 400px;
+  margin-top: 20px;
+  overflow: auto;
+  resize: both;
+} */

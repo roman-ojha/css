@@ -1,0 +1,89 @@
+#img1 {
+  width: 100px;
+  height: auto;
+  float: right;
+  padding: 10px;
+}
+/* float: right; ->by using this you can move image and the img is the block element 
+ which will not allow any element to come in his area bu after applying float 
+ evert block area which img is not using will release and give access to other
+ element to com to his unused blockarea  */
+
+#img2 {
+  width: 100px;
+  height: auto;
+  float: left;
+  padding: 10px;
+}
+
+#ul1 {
+  background-color: green;
+  list-style-type: none;
+  border: 1px solid red;
+  overflow: auto;
+}
+
+li {
+  color: palevioletred;
+  padding: 5px 10px;
+  float: left;
+}
+
+#p1 {
+  border: 1px solid red;
+  overflow: auto;
+}
+
+#img3 {
+  float: right;
+}
+/* in this image come out of the container if you will use float only 
+but after using overflow:auto ; automaticaly container will resize an 
+fill with image
+*/
+
+#p2 {
+  border: 1px solid red;
+  overflow: auto;
+}
+
+#img4 {
+  width: 100px;
+  height: auto;
+  float: right;
+}
+#img5 {
+  width: 100px;
+  height: auto;
+  float: right;
+  clear: right;
+}
+/* 
+
+if we alrady  have float right element in right side and we want to add another
+float float right element then the first float element will not allow another 
+float right element to come at the right position because there is alrady 
+one float right element in the container then to put another float right 
+element in the right side of the container then we have to use clear right
+and after that second element will come down and fit in right side   
+
+*/
+
+#div1 {
+  width: 70%;
+  height: 200px;
+  background-color: green;
+  float: left;
+}
+
+#div2 {
+  width: 30%;
+  background-color: indianred;
+  height: 150px;
+  float: left;
+}
+
+#div3 {
+  background-color: yellowgreen;
+  /* clear: both; */
+}

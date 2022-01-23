@@ -1,0 +1,33 @@
+/* object fit property can be use in image as well as video */
+
+#img1 {
+  border: 1px solid red;
+  width: 500px;
+  height: 400px;
+  object-fit: contain;
+}
+
+/* object-fit: contain; ->ratio will be same as  original */
+
+#img2 {
+  border: 1px solid red;
+  width: 500px;
+  height: 400px;
+  object-fit: fill;
+}
+
+#img3 {
+  border: 1px solid red;
+  width: 500px;
+  height: 400px;
+  object-fit: cover;
+  object-position: top center;
+}
+
+#img4 {
+  border: 1px solid red;
+  width: 500px;
+  height: 400px;
+  object-fit: contain;
+  object-position: top right;
+}

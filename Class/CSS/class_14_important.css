@@ -1,0 +1,14 @@
+/* praority:
+inline css and
+internal css or external css */
+
+/* but if you want to remove praority then: */
+/* you can do it by !important */
+
+#div1 {
+  border: 1px solid red !important;
+}
+
+#div1 {
+  border: 1px solid blue;
+}

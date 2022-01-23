@@ -1,0 +1,16 @@
+#green {
+  color: green;
+}
+#blue {
+  color: red;
+}
+#initial {
+  color: initial;
+}
+#inherit {
+  color: inherit;
+}
+
+/* initial; means the default CSS value will be apply and
+inherit; means the parent value what value parent have,
+ if we use inherit then that value will apply */

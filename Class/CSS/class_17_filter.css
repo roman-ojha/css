@@ -1,0 +1,60 @@
+/* #img1 {
+  height: 50vh;
+  width: 50vw;
+  filter: blur(10px);
+} */
+/* filter: blur(blur radius); */
+
+/* #img1 {
+  height: 50vh;
+  width: 50vw;
+  filter: brightness(50%);
+} */
+
+/* #img1 {
+  height: 50vh;
+  width: 50vw;
+  filter: contrast(50%);
+} */
+
+/* #img1 {
+  height: 50vh;
+  width: 50vw;
+  filter: drop-shadow(8px 8px 5px red);
+} */
+
+/* #img1 {
+  height: 50vh;
+  width: 50vw;
+  filter: grayscale(80%);
+} */
+
+/* #img1 {
+  height: 50vh;
+  width: 50vw;
+  filter: hue-rotate(90deg);
+} */
+
+/* #img1 {
+  height: 50vh;
+  width: 50vw;
+  filter: invert(100%);
+} */
+
+/* #img1 {
+  height: 50vh;
+  width: 50vw;
+  filter: opacity(50%);
+} */
+
+/* #img1 {
+  height: 50vh;
+  width: 50vw;
+  filter: saturate(50%);
+} */
+
+/* #img1 {
+  height: 50vh;
+  width: 50vw;
+  filter: sepia(50%);
+} */

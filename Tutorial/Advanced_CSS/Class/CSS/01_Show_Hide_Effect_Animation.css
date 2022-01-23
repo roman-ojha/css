@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Georama", sans-serif;
+}
+body {
+  height: 100vh;
+  width: 100%;
+  background-color: rgb(152, 195, 235);
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.container_outline {
+  width: 23em;
+  height: 10em;
+  display: flex;
+  justify-content: flex-end;
+}
+.container {
+  /* width: 4em;
+  height: 4em; */
+  width: 20em;
+  height: 11em;
+  background: rgb(22, 113, 231);
+  padding: 20px;
+  /* border-radius: 10px 10px 10px 100px; */
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all 200ms ease-out;
+  clip-path: circle(23.2% at 100% 0);
+}
+.container:hover {
+  /* width: 20em;
+  height: 11em;
+  border-radius: 10px; */
+  clip-path: circle(141.4% at 100% 0);
+}
+
+.heading {
+  font-size: 18px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: lighter;
+  margin-bottom: 10px;
+  color: greenyellow;
+}
+.paragraph {
+  width: 23em;
+  font-size: 11px;
+  color: white;
+  margin-bottom: 10px;
+}
+.footer {
+  color: white;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 13px;
+}
+
+/* Thapa technical code----------------------------- */
+@import url("https://fonts.googleapis.com/css2?family=Georama:wght@300&display=swap");
+
+.main-div {
+  width: 600px;
+  height: 300px;
+  padding: 30px;
+  background-color: #1380f5;
+  border-radius: 10px;
+  clip-path: circle(23.2% at 100% 0);
+  transition: all 0.3s;
+}
+
+.main-div h1 {
+  margin: 30px 0;
+  color: rgb(24, 241, 158);
+}
+
+.main-div p {
+  color: #fff;
+  line-height: 150%;
+}
+
+.main-div h3 {
+  color: #fff;
+  margin-top: 20px;
+}
+
+.main-div:hover {
+  clip-path: circle(141.4% at 100% 0);
+}

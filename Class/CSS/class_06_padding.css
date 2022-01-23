@@ -1,0 +1,25 @@
+/* the gap between border and contain is called pading  */
+/* #div1 {
+  border: 1px solid red;
+  padding: 25%;
+} */
+/* there will be 25% gap between border and content */
+
+/* #div1 {
+  border: 1px solid red;
+  padding: 25px 30px;
+} */
+/* padding: (top,bottom) (right,left) */
+
+/* #div1 {
+  border: 1px solid red;
+  padding: 25px 30px 35px 40px;
+} */
+
+#div1 {
+  border: 1px solid red;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  padding-right: 10%;
+  padding-left: 20%;
+}

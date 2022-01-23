@@ -1,0 +1,47 @@
+/* 
+
+CSS also have a function example:
+*rgb() -> you Know that () is a function 
+* rgba()
+*url()
+*linear-Gradient()
+etc...... 
+
+*/
+
+/* 
+
+but there are importent function like:
+ 1) calc ->calculation
+ 2) var ->variable
+ etc....
+*/
+
+/* to make variable you can declare like this in top: */
+:root {
+  --primary-color: teal;
+  --button-color: rgb(21, 107, 10);
+  --text-color: aliceblue;
+}
+
+#function1 {
+  background-color: var(--primary-color);
+  height: 200px;
+  width: calc(100% - 100px);
+}
+
+/* 
+width: calc(100%-100px); it means width need to be 100% but by -100px 
+that 100px will be saparete from body so that if i will resize beowser 
+then the width of the body will change(increase,decrease) but that 100px 
+will remain same 
+*/
+
+#a1 {
+  padding: 10px 30px;
+  margin: 20px;
+  background-color: var(--button-color);
+  color: var(--text-color);
+  text-decoration: none;
+  border-radius: 9px;
+}

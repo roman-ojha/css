@@ -1,0 +1,75 @@
+/* to make responsive for all the device we can do this */
+/* you can know the viewport size of browser by go to the website:
+http://www.onlineutilitywebsite.com/my-browser-size */
+/* 
+
+after going to that website you can rize the browser and  
+after knowing that in which size(px) my website is not responsive the way that i 
+made then after that you can make resposive in that size as well
+
+*/
+
+#div1 {
+  width: 70%;
+  float: left;
+  background-color: lawngreen;
+}
+
+#div2 {
+  width: 30%;
+  float: left;
+  background-color: rosybrown;
+}
+
+h1 {
+  font-size: 80px;
+}
+
+/*for the ipad the average resolution is 768*1024 */
+@media screen and (max-width: 768px) {
+  #div1 {
+    width: 50%;
+  }
+  #div2 {
+    width: 50%;
+  }
+  img {
+    width: 100%;
+    height: auto;
+  }
+  video {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #div1 {
+    width: 100%;
+  }
+  #div2 {
+    width: 100%;
+    color: white;
+    background-color: black;
+  }
+}
+
+@media screen and (min-width: 400px) and (max-width: 768px) {
+  #div1 {
+    width: 50%;
+  }
+  #div2 {
+    width: 50%;
+    color: white;
+    background-color: rgb(20, 27, 128);
+  }
+}
+
+/* when we are capable of making responsive website then we can try to use css framework
+ which will help to make website resposive  
+ EX:
+ * bootstrap
+ * skeleton css
+ * pure css
+ * foundation css
+ */

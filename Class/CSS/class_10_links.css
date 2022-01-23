@@ -1,0 +1,29 @@
+#anchor {
+  text-decoration: none;
+  font-size: 50px;
+}
+
+/* 
+in html link is in 4 state:
+link= normal state(default)
+visited= where user click and had visited
+hover= when you put mouse pointer over link
+active= when you click  
+*/
+
+/* if we want to use hover and we have already use link and visited then hover need to be at the top and active need to be at the bottom */
+#anchor:link {
+  color: yellowgreen;
+}
+
+#anchor:visited {
+  color: blue;
+}
+
+#anchor:hover {
+  color: orange;
+}
+
+#anchor:active {
+  color: red;
+}
