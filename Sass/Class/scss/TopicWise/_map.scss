@@ -1,0 +1,14 @@
+$font-weights: (
+  "ragular": 400,
+  "medium": 500,
+  "bold": 700,
+);
+
+body {
+  background: $primary-color;
+  color: $text-color;
+
+  font-weight: map-get($font-weights, $key: bold);
+  //   here we are getting the map value
+  //   map-get(<map_name>,<key_value>)
+}

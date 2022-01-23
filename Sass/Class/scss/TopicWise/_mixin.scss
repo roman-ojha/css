@@ -1,0 +1,55 @@
+// Example 01 ==================================================
+
+@mixin flexCenter($direction) {
+  // we will put the content that we will repetedly type inside the mixin
+  //  we can also pass an argument into the mixin
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: $direction;
+
+  // NOTE: function is use to compute value and return value and mixin should define styles
+}
+
+.main {
+  // here if we don't want to use the same peace of code that we have use previously the we can do
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+
+  //   now here we will include that mixin
+  @include flexCenter(row);
+  // and we can pass the argument
+}
+
+// Example 02 ===============================================
+
+@mixin theme($light-theme: true) {
+  // here we can also pass the default argument
+  // to use this we will going to create a '.light' class
+  @if $light-theme {
+    // if statement
+    background: lighten($primary-color, 100%);
+    color: darken($text-color, 100%);
+  }
+}
+
+.light {
+  @include theme($light-theme: false);
+  // now we will add a class into the body in 'index.html' for right now
+}
+
+// Example 03 (use in medai query) =================================================
+
+@mixin mobile {
+  @media (max-width: $mobile) {
+    @content;
+  }
+}
+
+.main {
+  @include mobile {
+    // if content width will be less the '$mobile' variable then we want to use this style
+    flex-direction: column;
+  }
+}

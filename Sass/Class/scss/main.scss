@@ -1,0 +1,75 @@
+/*
+    *) What is sass?
+        -> Sass (short for syntactically awesome style sheets) is a preprocessor scripting language that is interpreted or compiled into Cascading Style Sheets (CSS)
+        -> it is a css extention language
+        -> our browser can't read Sass so it has to recompile into plain css
+            -> we can use NodeJS that will run a compiler that will watch our sass file and compile them automatically for us
+            -> or we can use Gulp to do the same thing.
+            -> or we can use extension in VS code
+
+        => VS code extention for the sass compiler:
+           ->  For this tutorial we will going to use Visual Studio Code 'Live Sass Compiler' & "Live Server"
+            -> we will install the 'Live Sass Compiler' and we will change some setting:
+                -> Optional setting:
+                    "liveSassCompile.settings.formats": [
+                        // This is Default.
+                        {
+                        "format": "expanded",
+                        "extensionName": ".css",
+                        "savePath": null
+                        },
+                        {
+                        "format": "expanded",
+                        "extensionName": ".css",
+                        "savePath": "/dist/css"
+                        },
+                        // You can add more
+                        {
+                        "format": "compressed",
+                        "extensionName": ".min.css",
+                        "savePath": "/dist/css"
+                        },
+                        // More Complex
+                        {
+                        "format": "compressed",
+                        "extensionName": ".min.css",
+                        "savePath": "~/../css/"
+                        }
+                    ]
+
+    *) There are two syntex that are supported in Sass:
+            a) Scss Syntax (it uses the file extention as 'scss')
+            b) Indented Syntax
+                -> this was the original syntax for sass it uses the file extention called 'sass' it support all the same feature as 'scss' but it uses indentation insted of curlybracess and semicolons.
+            => for this tutorial we will going to use 'scss' syntex 
+
+    *) we can click on 'watch scss' button at the bottom side of vscode after that it will compoile the sass code every single time we save the file
+
+    *) NOTE: we should not modify the .css file we only have to modify the scss file
+*/
+
+// # Scss variables: =========================================
+
+// Scss varialbes doesn't not compile the variable into the 'css' variable but it will actually compile 'Scss' varialbe into the 'css' value
+// code is in '_variables.scss'
+@import "./TopicWise/variables";
+
+// Scss Maps: ======================================================
+@import "./TopicWise/map";
+
+// Nesting: ====================================================
+@import "./TopicWise/nesting";
+
+// Seperating Sass File(Partials) ===========================================
+// in Sass we can create other sass file and include in that sass file
+// A partial is simply a sass file named with a leading underscore. So the undersore lets sass know that the file is only a partial, and that it should not generate a CSS file.
+// so the compiler will going to ignore those file that begin with an underscore
+// now we will create a '_resets.scss' file
+// we have to import this file into the top but because of tutorial consistancy we will import it in here
+@import "./resets";
+
+// Functions ================================================================
+@import "./TopicWise/function";
+
+// Mixin ============================================================
+@import "./TopicWise/mixin";

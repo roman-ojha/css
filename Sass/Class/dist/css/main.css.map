@@ -1,0 +1,15 @@
+{
+    "version": 3,
+    "mappings": "AAAA;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;EAgDE;AChDF,AAAA,KAAK,CAAC;EAGJ,eAAe,CAAA,QAAC;EAChB,aAAa,CAAA,QAAC;EACd,YAAY,CAAA,KAAC;CACd;;ACAD,AAAA,IAAI,CAAC;EACH,UAAU,EDEI,OAAO;ECDrB,KAAK,EDGM,IAAI;ECDf,WAAW,EAPH,GAAG;CAUZ;;ACbD,AAAA,KAAK,CAAC;EACJ,KAAK,EAAE,GAAG;EACV,MAAM,EAAE,MAAM;CAsBf;;AAxBD,AAGE,KAHG,CAGH,CAAC,CAAC;EAEA,WAAW,EDFL,GAAG;CCGV;;AANH,AAOE,KAPG,CAOH,gBAAgB,CAAC;EAEf,WAAW,EDNL,GAAG;CCOV;;AACA,AAAD,gBAAY,CAAC;EAGX,WAAW,EDXL,GAAG;CCYV;;AAfH,AAgBE,KAhBG,CAgBH,gBAAgB,CAAA;EAEd,WAAW,EDfL,GAAG;CCoBV;;AAvBH,AAmBI,KAnBC,CAgBH,gBAAgB,AAGb,MAAM,CAAC;EAEN,KAAK,EAAE,IAAI;CACZ;;ACtBL,AAAA,CAAC,CAAC;EACA,UAAU,EAAE,UAAU;EACtB,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;CACX;;ACED,AACE,KADG,CACH,gBAAgB,CAAA;EACd,WAAW,EHPF,GAAG;CGQb;;ACIH,AAAA,KAAK,CAAC;EARJ,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,MAAM;EACvB,WAAW,EAAE,MAAM;EACnB,cAAc,EAYM,GAAG;CAExB;;AAsBC,MAAM,EAAE,SAAS,EAAE,KAAK;EAK1B,AAAA,KAAK,CAAC;IAGF,cAAc,EAAE,MAAM;GAEzB",
+    "sources": [
+        "../../scss/main.scss",
+        "../../scss/TopicWise/_variables.scss",
+        "../../scss/TopicWise/_map.scss",
+        "../../scss/TopicWise/_nesting.scss",
+        "../../scss/_resets.scss",
+        "../../scss/TopicWise/_function.scss",
+        "../../scss/TopicWise/_mixin.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}

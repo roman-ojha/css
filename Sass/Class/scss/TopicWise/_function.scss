@@ -1,0 +1,11 @@
+@function weight($weight-name) {
+  // @function <function_name>(<varialbe_name>){}
+  @return map-get($font-weights, $key: $weight-name);
+  //   here we are returning the map-get() and we are passing the value '$weight-name' inside it
+}
+// now we will going to call the function inside here:
+.main {
+  #{&}__paragraph {
+    font-weight: weight(ragular);
+  }
+}

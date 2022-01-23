@@ -1,0 +1,14 @@
+:root {
+  // this variable will compile as the 'css' varialbe
+  //   CSS varialbe
+  --primary-color: #272727;
+  --acent-color: #ff652f;
+  --text-color: #fff;
+}
+
+// Scss Variable
+$primary-color: #272727;
+$acent-color: #ff652f;
+$text-color: #fff;
+
+$mobile: 800px;
