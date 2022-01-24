@@ -1,0 +1,53 @@
+/*
+-> to store value in list
+    -> $list: 10px 20px 30px;
+    -> $list: 10px, 20px, 30px;
+    -> $list: [10px, 20px, 30px];
+    *) List Function
+        a) length()
+        b) nth()
+        c) set-nth()
+        d) join()
+        e) append()
+        f) zip()
+        g) index()
+        h) list-separator()
+        i) is-bracketed()
+*/
+
+$list: 10px, 20px, 30px;
+
+.test {
+  padding: length($list);
+  // return 3; (lenght of the list)
+  padding: length(
+    (
+      width: 10px,
+      height: 20px,
+    )
+  );
+  //   return 2
+  padding: nth($list, 2);
+  //   return 20px;
+  padding: nth($list, -1);
+  //   return 30px
+  padding: set-nth($list, 2, 25px);
+  //   return 10px 25px 30px (to set the given value in the given list in given index
+  padding: join((10), (20));
+  //   return 10 20;
+  padding: join($list, (40px, 50px, 10rem), space);
+  //   return 10px 20px 30px 40px 60px 10rem
+  // join(<first_list>,<second_list>,<seperate_by>
+  padding: join($list, (40px, 50px, 10rem), auto);
+
+  padding: append($list, 40rem, space);
+  //   return 10px 20px 30px 40rem
+  // append(<first_list>,<value>,<seperate_by>
+
+  padding: zip($list, (50px 60px 70px));
+  //   10px 50px, 20px 60px, 30px 70px;(it will combine value of index by index)
+  padding: index($list, 20px);
+  //   return 2;(will return index if value exist in the list)
+  padding: list-separator($list);
+  //   return comma (because it is seperated by comma)
+}

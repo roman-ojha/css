@@ -1,0 +1,121 @@
+/*
+    *) Selector Function:
+        a) selector-nest
+        b) selector-append
+        c) selector-replace
+        d) is-superselector
+        e) simple-selectors
+        f) selector-unify
+        g) selector-extend
+*/
+
+$selector: selector-nest("ul", "li");
+// selector-nest function will make 'ul' as parent and 'li' of his child
+
+#{$selector} {
+  width: 10px;
+  /*
+  // output:
+      ul li{
+          width:10px;
+      }
+  */
+}
+
+$selector2: selector-nest(".abc, .xyz", "p");
+#{$selector2} {
+  width: 10px;
+  // Output:
+  /*
+        .abc p,.xyz p{
+            width:10px;
+        }
+    */
+}
+
+$selector3: selector-nest(".abc", "&:hover");
+#{$selector3} {
+  width: 10px;
+  // Output:
+  /*
+        .abc:hover{
+            width:10px;
+        }
+    */
+}
+
+$selector4: selector-nest(".abc", "&_xyz");
+#{$selector4} {
+  width: 10px;
+  // Output:
+  /*
+        .abc_xyz{
+            width:10px;
+        }
+    */
+}
+
+$selector5: selector-append(".abc", "_copy, _image");
+#{$selector5} {
+  width: 10px;
+  // Output:
+  /*
+        .abc_copy, .abc_image{
+            width:10px;
+        }
+    */
+}
+
+$selector6: selector-replace("a_abc", "_abc", "_xyz");
+// selector-replace(<value>,<what_to_replace>,<replace_with_what_value>)
+#{$selector6} {
+  width: 10px;
+  // Output:
+  /*
+        a_xyz{
+            width:10px;
+        }
+    */
+}
+
+$selector7: is-superselector("a", "a.active");
+// return true
+// is-superselector(<super_selector>,<sub_selector>)
+// this will return true/false
+// return true if super_selector exist into the sub_selector
+// else false
+
+$selector8: simple-selectors("a.abc");
+#{$selector8} {
+  width: 10px;
+  // Output:
+  /*
+        a, .abc{
+            width:10px;
+        }
+    */
+}
+
+$selector9: selector-unify("a", ".active");
+// this will return another selector if those given selector have some match
+#{$selector9} {
+  width: 10px;
+  // Output:
+  /*
+        a.active{
+            width:10px;
+        }
+    */
+}
+
+$selector10: selector-extend("a.disable", "a", ".link");
+// this will make a combination of the given selector
+#{$selector10} {
+  width: 10px;
+  // Output:
+  /*
+        a.disable, .disable.link{
+            width:10px;
+        }
+    */
+}
