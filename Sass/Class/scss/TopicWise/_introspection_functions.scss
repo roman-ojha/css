@@ -1,0 +1,52 @@
+/*
+    -> introspection function of sass:
+        -> these function will use in conditions
+            a) variable-exists()
+            b) function-exists()
+            c) global-variable-exists()
+            d) type-of()
+            e) mixin-exists()
+            f) inspect()
+*/
+
+$num: 10px;
+$char: "Arial";
+$list: 10px 20px 30px;
+$map: (
+  "ragular": 400,
+  "medium": 500,
+);
+
+@mixin border-radius {
+  border-radius: 50px;
+}
+
+@function add($a, $b) {
+  @return $a + $b;
+}
+
+.test {
+  $local: 10px;
+  padding: variable-exists(num);
+  // return true;
+  // this will return true if this given variable exist into the scss file if not then return false
+  padding: global-variable-exists(local);
+  //   return false;
+  //   because 'local' variable is not global variable
+  padding: mixin-exists(border-radius);
+  //   return true;
+  padding: function-exists(add);
+  //   return true;
+  padding: type-of($num);
+  // return number;
+  padding: type-of($char);
+  //   return string;
+  padding: type-of($list);
+  //   return list;
+  padding: type-of($map);
+  // return map;
+  padding: inspect($num);
+  //   return 10px;
+  padding: inspect(null);
+  //   return null;
+}
