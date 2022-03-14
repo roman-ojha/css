@@ -25,6 +25,8 @@ and position */
   background-color: indianred;
   display: flex;
   flex-direction: row-reverse;
+  gap: 14px;
+  /* to give gap between flex child */
 }
 .flex-child3 {
   background-color: wheat;

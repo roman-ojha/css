@@ -67,6 +67,11 @@ Type of Selector are:
             color:green;
         } 
         
+9) Attribute Selector
+-> a) selecting with child attribute value
+        a[target=_blank]{
+          background-color:yellow;
+        }
         
         
 */
