@@ -1,5 +1,6 @@
 /*
     -> The CSS grid Layout Module offers a grid-based layout system, with rows and columns, making ti easier to design web pages without have to use floats and positioning
+    -> https://www.w3schools.com/css/css_grid.asp
 */
 
 * {
@@ -7,11 +8,18 @@
   padding: 0;
 }
 
-main {
+.main1 {
   width: 90%;
   margin: 50px auto;
   border: 1px solid black;
   color: white;
+  display: grid;
+  grid-template-rows: 150px 150px;
+  /* here we are defining we want to rows of 150px's */
+  /* 150px: is the hight of the row */
+  grid-template-columns: 150px 150px 150px;
+  /* here we are defining we want 3 column of 150px */
+  /* here in column we given the width of the element */
 }
 
 .div1 {
@@ -30,5 +38,64 @@ main {
   background: orange;
 }
 .div6 {
+  background: black;
+}
+
+.main2 {
+  width: 90%;
+  margin: 50px auto;
+  border: 1px solid black;
+  color: white;
+  display: grid;
+  /* grid-template-columns: 150px 150px 1fr; */
+  /* fr: 'fr' is the fractional unit  */
+  /* here 1fr will contain all the available width */
+  grid-template-columns: repeat(3, 1fr);
+  /* if you want 3 '1fr' then you can use repeat function */
+  /* or we can use it on any value now: */
+  grid-template-rows: repeat(2, 150px);
+  row-gap: 20px;
+  /* if you want some gap between row children */
+  column-gap: 20px;
+  gap: 20px;
+  /* or you can also you 'gap' property except row-gap/column-gap */
+  /*Positioning Element:  */
+  /* Grid Line: 
+  The line between column are called column line
+  The line between rows are called row lines
+  */
+  /* so we are try to put '.div5' element into '.div2' position for that reason we have write some code inside the '.div5' */
+}
+
+.main2 .div1 {
+  background: red;
+}
+.main2 .div2 {
+  background: blue;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  /* if you want this element to contain from line 1 to line 4 then we can do this  */
+}
+.main2 .div3 {
+  background: green;
+  grid-column: 1/-1;
+  /* if you want the  element to content up to end then we can use '-1'*/
+}
+.main2 .div4 {
+  background: yellow;
+}
+.main2 .div5 {
+  background: orange;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  /* using start and end we can position the element according to grid lines */
+  /* grid-column-start: 2; */
+  /* grid-column-end: 3; */
+  /* if we want to span '.div5' end we just have to change the position of the div*/
+  /* grid-column-end: 4; */
+  /* we can use shortcut to perform do the same task */
+  grid-column: 2/4;
+}
+.main2 .div6 {
   background: black;
 }
