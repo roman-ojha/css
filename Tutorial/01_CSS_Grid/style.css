@@ -1,0 +1,34 @@
+/*
+    -> The CSS grid Layout Module offers a grid-based layout system, with rows and columns, making ti easier to design web pages without have to use floats and positioning
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  width: 90%;
+  margin: 50px auto;
+  border: 1px solid black;
+  color: white;
+}
+
+.div1 {
+  background: red;
+}
+.div2 {
+  background: blue;
+}
+.div3 {
+  background: green;
+}
+.div4 {
+  background: yellow;
+}
+.div5 {
+  background: orange;
+}
+.div6 {
+  background: black;
+}
