@@ -17,6 +17,7 @@
   grid-template-rows: 150px 150px;
   /* here we are defining we want to rows of 150px's */
   /* 150px: is the hight of the row */
+  /* Total Height of the Grid template will be: 150px + 150px = 300px */
   grid-template-columns: 150px 150px 150px;
   /* here we are defining we want 3 column of 150px */
   /* here in column we given the width of the element */
