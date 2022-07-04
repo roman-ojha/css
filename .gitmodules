@@ -1,0 +1,6 @@
+[submodule "Sass"]
+	path = Sass
+	url = https://github.com/roman-Ojha/sass
+[submodule "Tailwind"]
+	path = Tailwind
+	url = https://github.com/Roman-Ojha/tailwind
