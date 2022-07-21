@@ -1,3 +1,4 @@
+<!-- here in 'fill' we will use 'foreground' color variable so that after toggle we can change the value of foreground color -->
 <svg
 fill="var(--foreground)"
 xmlns="http://www.w3.org/2000/svg"
