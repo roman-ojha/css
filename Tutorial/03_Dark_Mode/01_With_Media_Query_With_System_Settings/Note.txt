@@ -1,0 +1,4 @@
+-> here we will add dark mode to our website according to system setting
+-> if system is on light mode then we will show light mode of website as well
+-> if system is on dark mode then we will show dark mode of website
+-> but if system doesn't support dark mode or browser doesn't support dark mode then website will get set to the default mode

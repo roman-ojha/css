@@ -7,25 +7,33 @@
 }
 
 :root {
+  // here we will set the color schema for different mode
   --clr-light: #fdffc4;
   --clr-dark: #00332a;
   --clr-primary: #dbffa2;
   --clr-secondary: #c3fcf2;
   --clr-accent: #ff7750;
 
+  // For light mode
+  // now here we will set foreground and background color for light mode
   --foreground: var(--clr-dark);
+  // for foreground color will set as '--clr-dark'
   --background: var(--clr-light);
+  // and for background color we will set '--clr-light'
 
   --ff-title: "Playfair Display", serif;
   --ff-body: "Assistant", sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
+  // For Dark Mode:
   :root {
+    // now here we will switch the value if system prefers color scheme is dart then we will change some variable value
     --clr-primary: #202302;
     --clr-secondary: #00100d;
     --clr-accent: #ff7750;
 
+    // and here we will switch foreground and background color value
     --background: var(--clr-dark);
     --foreground: var(--clr-light);
   }
