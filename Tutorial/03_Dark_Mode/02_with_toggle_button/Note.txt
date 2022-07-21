@@ -1,0 +1,2 @@
+-> here we will make a website light/dark model with toggle button
+-> and also if the person visit website day or week or month later it will remember the setting for that we will use local storage
