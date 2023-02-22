@@ -1,0 +1,85 @@
+body {
+  height: 100vh;
+  width: 100vw;
+  margin: 0px;
+  padding: 0px;
+  /* background-color: blue;
+  background-image: url("Pictures/Background\ 01.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: scroll; */
+}
+
+div h1 {
+  color: red;
+  letter-spacing: 2px;
+  word-spacing: 3px;
+  font-size: 20px;
+  font-family: "Times New Roman", Times, serif;
+  text-decoration: underline;
+  word-wrap: break-word;
+  text-transform: capitalize;
+  text-align: justify;
+  direction: ltr;
+  font-weight: 400;
+  font-style: italic;
+  font-variant: small-caps;
+  line-height: 30px;
+}
+
+ol {
+  list-style-type: disc;
+  list-style-position: outside;
+  /* list-style-image: url("Pictures/Background\ 01.jpg"); */
+}
+
+table {
+  /* border: 1px solid red; */
+  border-collapse: collapse;
+  text-align: left;
+  border-spacing: 5px;
+  border-width: 0px;
+}
+td,
+th {
+  padding: 10px;
+}
+
+div {
+  border: 10px solid green;
+  margin: 30px;
+  /* display: none; */
+  border-radius: 10px;
+  /* border-image: url("Pictures/Background\ 04.jpg"); */
+  box-shadow: 10px 3px 10px purple inset;
+  border-image: url("Pictures/Background\ 03.jpg") 100 repeat;
+  /* border-image-width: 100;
+  border-image-repeat: round; */
+}
+
+span {
+  border: 1px solid blueviolet;
+  margin: 10px;
+  height: 100px;
+  width: 200px;
+  display: inline-block;
+  position: sticky;
+  clear: left;
+}
+
+img {
+  float: left;
+}
+
+#container {
+  height: 200px;
+  word-break: break-all;
+  overflow: scroll;
+  transition-duration: 300ms;
+  cursor: pointer;
+}
+
+#container:hover {
+  background-color: red;
+}

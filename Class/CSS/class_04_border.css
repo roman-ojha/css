@@ -110,4 +110,7 @@
   border-width: 5px;
   border-color: brown;
   border-bottom-right-radius: 20px;
+  /* border-top-color: red; */
+  /* border-top-width: 10px; */
+  /* border-left-style: dashed; */
 }
